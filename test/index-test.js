@@ -11,5 +11,13 @@ describe('Calculate', () => {
         //verify
         assert.strictEqual(actual, expected);
   });
-});
+    it('returns Error when given number is 0', () => {
+        //setup
+        const expected = 1
+        //exercise
+        const actual = Calculate.factorial(0);
+        //verify
+        assert.strictEqual(expected, actual)
+    });
+  });
 });
